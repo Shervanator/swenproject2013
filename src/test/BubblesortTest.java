@@ -4,29 +4,40 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import sort.Sorting;
+import sort.Bubblesort;
 
 
-public class SortingTest {
-
-	/**public void testCount1() {
-		int []init = {14,8,17,56,23,0,57,4,25}; 
-		int []expected = {0,4,8,14,17,23,25,56,57};
-		int []actual = Sorting.bubbleSort(init);
+public class BubblesortTest {
+	/**
+	 * 100% line coverage test, only 73% mutation score
+	 * Refer to folder a
+	 */
+	//@Test
+	/**public void test1() {
+		int []init = {2, 1}; 
+		int []expected = {1, 2};
+		Sorting sort = new Sorting();
+		int []actual = sort.bubbleSort(init);
 		
-		assertArrayEquals("true", expected, actual); 
+		assertArrayEquals("when the array is size one", expected, actual); 
 	}**/
 	
 	
-	//n = 1
-	@Test
-	public void test1() {
-		int []init = {5, 6, 4}; 
-		int []expected = {4, 5, 6};
-		int []actual = Sorting.bubbleSort(init);
-		
-		assertArrayEquals("when the array is size one", expected, actual); 
-	}
 	
-
+//==========================================================================
+	
+    /**
+     * 100% line coverage, but 80% mutation coverage
+     * refer to folder b
+     */
+	//@Test
+    /**public void test2() {
+        int []init = {3, 2, 1}; 
+        int []expected = {1, 2, 3};
+        Bubblesort sort = new Bubblesort();
+        int []actual = sort.bubbleSort(init);
+        
+        assertArrayEquals("when the array is size one", expected, actual); 
+    }**/
+	
 }
