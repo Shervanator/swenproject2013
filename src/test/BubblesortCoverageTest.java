@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import sort.Bubblesort;
+import programs.Bubblesort;
 
 
 public class BubblesortCoverageTest {

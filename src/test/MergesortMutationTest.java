@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import sort.Bubblesort;
-import sort.Mergesort;
+import programs.Bubblesort;
+import programs.Mergesort;
 
 
 public class MergesortMutationTest {
