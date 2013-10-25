@@ -1,4 +1,4 @@
-package sort;
+package programs;
 
 public class Mergesort {
     private int[] numbers;
