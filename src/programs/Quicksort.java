@@ -1,6 +1,6 @@
 package programs;
 
-import java.util.Arrays;
+
 
 /**
  * from: http://www.vogella.com/articles/JavaAlgorithmsQuicksort/article.html
@@ -8,39 +8,11 @@ import java.util.Arrays;
 public class Quicksort {
     private int[] numbers;
     private int number;
-    
-    /** public static void main(String[] argv) {
-        System.out.println("RUNNING");
-        for (int i = 0; i < 1000000; i++) {
-            int rand = (int) (Math.random() * 100);
-            int myarray[] = new int [rand]; 
-            int myarray2[] = new int [rand]; 
-
-            for (int j = 0 ; j < rand ; j++) 
-            { 
-                myarray[j] = (int) (Math.random () * 1000); 
-                myarray2[j] = myarray[j];
-            }
-            
-            Quicksort s = new Quicksort();
-            Arrays.sort(myarray);
-            s.sort(myarray2);
-            
-            for (int j = 0 ; j < rand ; j++) 
-            { 
-                if (myarray2[j] != myarray[j]) {
-                    System.out.println("NOT EQUAL!!!!");
-                    System.out.println(myarray2.toString());
-                }
-            }
-        }
-        System.out.println("DONE");
-    } **/
 
     public void sort(int[] values) {
       // check for empty or null array
       if (values ==null || values.length==0){
-        return;
+          return;
       }
       this.numbers = values;
       number = values.length;
