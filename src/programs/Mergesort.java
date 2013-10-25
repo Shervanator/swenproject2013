@@ -3,46 +3,13 @@ package programs;
 public class Mergesort {
     private int[] numbers;
     private int[] helper;
-
     private int number;
-    
-    /**public static void main(String[] argv) {
-        System.out.println("RUNNING");
-        Random r = new Random(System.currentTimeMillis());
-        for (int i = 0; i < 10; i++) {
-            int rand = (int) (r.nextDouble() * 100);
-            System.out.println(rand);
-            int myarray[] = new int [rand]; 
-            int myarray2[] = new int [rand]; 
-
-            for (int j = 0 ; j < rand ; j++) 
-            { 
-                myarray[j] = (int) (r.nextDouble() * 1000); 
-                myarray2[j] = myarray[j];
-            }
-            
-            Mergesort s = new Mergesort();
-            Arrays.sort(myarray);
-            s.sort(myarray2);
-            
-            for (int j = 0 ; j < rand ; j++) 
-            { 
-                if (myarray2[j] != myarray[j]) {
-                    System.out.println("NOT EQUAL!!!!");
-                    System.out.println(myarray2.toString());
-                }
-            }
-        }
-        System.out.println("DONE");
-    }**/
-
     public void sort(int[] values) {
       this.numbers = values;
       number = values.length;
       this.helper = new int[number];
       mergesort(0, number - 1);
     }
-
     private void mergesort(int low, int high) {
       // check if low is smaller then high, if not then the array is sorted
       if (low < high) {
