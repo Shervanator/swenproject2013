@@ -49,7 +49,7 @@ public class Mergesort {
       // Copy the rest of the left side of the array into the target array
       while (i <= middle) {
         numbers[k] = helper[i];
-       // k++;
+        k++;
         i++;
       }
 
