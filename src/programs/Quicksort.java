@@ -45,7 +45,7 @@ public class Quicksort {
         if (i <= j) {
           exchange(i, j);
           i++;
-         // j--;
+          j--;
         }
       }
       // Recursion
