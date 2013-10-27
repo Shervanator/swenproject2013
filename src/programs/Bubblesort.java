@@ -1,7 +1,8 @@
 package programs;
 
 /**
- * from: ??
+ * from: http://www.programmingsimplified.com/java/source-code/java-program-to-bubble-sort
+ * modified
  */
 public class Bubblesort {
  public int[] bubbleSort(int[] array) {

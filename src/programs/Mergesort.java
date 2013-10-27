@@ -1,5 +1,8 @@
 package programs;
 
+/**
+ * From: http://www.vogella.com/articles/JavaAlgorithmsMergesort/article.html
+ */
 public class Mergesort {
     private int[] numbers;
     private int[] helper;

@@ -1,5 +1,8 @@
 package programs;
 
+/**
+ * From assignment 1, Tim Miller 2013.
+ */
 public class KMP {
 
     /** The minimum and maximum string length */
